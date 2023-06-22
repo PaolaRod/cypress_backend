@@ -8,6 +8,7 @@ module.exports = defineConfig({
     excludeSpecPattern:[
       "**/1-getting-started/*.js",
       "**/2-advanced-examples/*.js"
-    ]
+    ],
+    baseUrl: 'http://localhost:3000',
   },
 });
