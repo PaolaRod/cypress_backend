@@ -17,6 +17,12 @@
       "first_name": "Ana",
       "last_name": "Smith",
       "email": "ana@platzi.com"
+    },
+    {
+      "first_name": "Paola",
+      "last_name": "Rodriguez",
+      "email": "dipiabit@gmail.com",
+      "id": 4
     }
   ]
 }
