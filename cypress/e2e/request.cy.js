@@ -41,7 +41,15 @@ describe("probando request", () => {
         expect(response.status).to.eq(200);
         expect(response.body.email).to.eq("dipiabit@gmail.com");
         expect(response.body.email).to.not.eq(this.email);
+    })
+  });
 
+  it("it must delete the created user", function() {
+    cy.request({
+      url: `employees/${this.id}`,
+      method: "DELETE",
+    }).then(response => {
+        expect(response.status).to.eq(200);
     })
   });
 });
