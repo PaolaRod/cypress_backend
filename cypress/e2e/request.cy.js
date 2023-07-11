@@ -1,5 +1,5 @@
 describe("probando request", () => {
-  it("create an employee", () => {
+  before("create an employee", () => {
     cy.request({
       url: "employees",
       method: "POST",
@@ -44,7 +44,7 @@ describe("probando request", () => {
     })
   });
 
-  it("it must delete the created user", function() {
+  after("it must delete the created user", function() {
     cy.request({
       url: `employees/${this.id}`,
       method: "DELETE",
